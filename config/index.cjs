@@ -11,7 +11,7 @@ const USER_CONFIG = {
   APP_ID: 'wx041fe46ef3522604',
 
   // 使用微信测试号：公众号APP_SECRET
-  APP_SECRET: '16fe3d2089cfbc89a61e8485801da470',
+  APP_SECRET: 'a5b9572a75e0f636ecebd387d9e62ce3',
 
   PROVINCE: '吉林',
   CITY: '长春',
