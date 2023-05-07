@@ -21,9 +21,9 @@ const USER_CONFIG = {
       // 想要发送的人的名字
       name: '柒宝贝',
       // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: 'o7XM05_o8zJG6DLaidTlp6-RhqGg,o7XM05weWYftE9b_B7j8_DLTnfTQ',
+      id: 'o7XM05_o8zJG6DLaidTlp6-RhqGg',
       // 使用微信测试号：你想对他发送的模板消息的模板ID
-      useTemplateId: 'zv3bA790Xg1-oRcJ8C2aC55OuQfwKx-OryvJi2Ya3Vc',
+      useTemplateId: 'UZbReTt24E7wnaeEehijqkVbKEq6X82uIEkYuQlkIZw',
       // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
       horoscopeDate: '7-27',
       festivals: [
@@ -46,12 +46,78 @@ const USER_CONFIG = {
         // 结婚纪念日
         //{ keyword: 'marry_day', date: '2022-09-09' },
       ],
+      
+      /** 你可以在这里写超多的你想显示的内容了！
+   * keyword是指暴露给测试号的模板字段，填什么就暴露什么, 请注意不要和README的出参表中的字段重复。
+   * 比如：keyword: "lover_prattle" ，在测试号中就是 {{ lover_prattle.DATA }}
+   * */
+  SLOT_LIST: [
+    // 这样配置的话，就会每次发送这句话
+    { keyword: 'encourage_oneself', contents: '你主要的问题在于读书太少而想得太多' },
+    // 这样配置的话，就会每次随机选一句话发送
+    {
+      keyword: 'love_records',
+      contents: [
+        '雄：“那你嫁给我好不好” \r 柒：“好”',
+        '柒：“考研不是要学英语吗” \r “那你应该还行吧” \r 雄：“我不行” \r “别找我” \r 柒：“那我问问我朋友” \r 雄：“那你问吧” \r\r 雄：“姐姐还在降重？” \r “等我开完会回去帮你降降重” \r “也帮你降降火”',
+        '哟吼~，我们相距约1.2km。 \r ------------- \r 我捡到了你的纸飞机： \r 有个可爱的人，正在读我写的字',
+        '柒：“吗的那天真想嫁给他啊” \r 雄：“我帮你改，你嫁给我” \r 柒：“娶我这么简单？” \r ... \r 柒：“那我勉为其难的不要他，考虑你吧”'
+      ],
+    }
+    // 你可以不断按格式往下增加
+    // ...
+  ],
+    },{
+      // 想要发送的人的名字
+      name: '王宝贝',
+      // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
+      id: 'o7XM05weWYftE9b_B7j8_DLTnfTQ',
+      // 使用微信测试号：你想对他发送的模板消息的模板ID
+      useTemplateId: 'UZbReTt24E7wnaeEehijqkVbKEq6X82uIEkYuQlkIZw',
+      // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
+      horoscopeDate: '7-27',
+      festivals: [
+        // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
+        //{
+          //type: '*生日', name: '宝贝', year: '1996', date: '09-09',
+        //},
+        // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
+        {
+          type: '生日', name: '柒柒', year: '2001', date: '07-27',
+        },
+        {
+          type: '节日', name: '相识纪念日', year: '2023', date: '04-07',
+        },
+      ],
+      // 我们在一起已经有xxxx天了的配置
+      customizedDateList: [
+        // 在一起的日子
+        { keyword: 'love_day', date: '2023-04-30' },
+        // 相识纪念日
+        { keyword: 'meet_day', date: '2023-04-07' },
+      ],
+       SLOT_LIST: [
+    // 这样配置的话，就会每次发送这句话
+    { keyword: 'encourage_oneself', contents: '你主要的问题在于读书太少而想得太多' },
+    // 这样配置的话，就会每次随机选一句话发送
+    {
+      keyword: 'love_records',
+      contents: [
+        '雄：“那你嫁给我好不好” \r 柒：“好”',
+        '柒：“考研不是要学英语吗” \r “那你应该还行吧” \r 雄：“我不行” \r “别找我” \r 柒：“那我问问我朋友” \r 雄：“那你问吧” \r\r 雄：“姐姐还在降重？” \r “等我开完会回去帮你降降重” \r “也帮你降降火”',
+        '哟吼~，我们相距约1.2km。 \r ------------- \r 我捡到了你的纸飞机： \r 有个可爱的人，正在读我写的字',
+        '柒：“吗的那天真想嫁给他啊” \r 雄：“我帮你改，你嫁给我” \r 柒：“娶我这么简单？” \r ... \r 柒：“那我勉为其难的不要他，考虑你吧”'
+      ],
+    }
+    // 你可以不断按格式往下增加
+    // ...
+  ],
     },
   ],
 
 
   // 【推送完成提醒】模板id, 用来看自己有没有发送成功的那个模板
-  CALLBACK_TEMPLATE_ID: 'YBRDUeScOP7AF950ZpFTTg3OplB0bQ1MfFW9K5S3BFI',
+  CALLBACK_TEMPLATE_ID: 'Ne6fXui0Bcl95XwWJJnRPx22tavKf79LEuBZ1viONTM',
 
   CALLBACK_USERS: [
     {
