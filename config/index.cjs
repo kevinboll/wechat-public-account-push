@@ -23,7 +23,7 @@ const USER_CONFIG = {
       // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       id: 'o7XM05_o8zJG6DLaidTlp6-RhqGg',
       // 使用微信测试号：你想对他发送的模板消息的模板ID
-      useTemplateId: 'UZbReTt24E7wnaeEehijqkVbKEq6X82uIEkYuQlkIZw',
+      useTemplateId: 'blMieWZ4QJtK4y_xuhl7VLZZ51XW5FddPgkXZJC35mA',
       // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
       horoscopeDate: '7-27',
       festivals: [
@@ -45,6 +45,8 @@ const USER_CONFIG = {
         { keyword: 'love_day', date: '2023-04-30' },
         // 相识纪念日
         { keyword: 'meet_day', date: '2023-04-07' },
+        // 告白纪念日
+        { keyword: 'confession_day', date:'2023-5-13' },
       ],
       
       /** 你可以在这里写超多的你想显示的内容了！
@@ -53,7 +55,7 @@ const USER_CONFIG = {
    * */
   SLOT_LIST: [
     // 这样配置的话，就会每次发送这句话
-    { keyword: 'encourage_oneself', contents: '你主要的问题在于读书太少而想得太多' },
+    { keyword: 'message_board', contents: '宝贝不要生我的气啦' },
     // 这样配置的话，就会每次随机选一句话发送
     {
       keyword: 'love_records',
@@ -73,7 +75,7 @@ const USER_CONFIG = {
       // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       id: 'o7XM05weWYftE9b_B7j8_DLTnfTQ',
       // 使用微信测试号：你想对他发送的模板消息的模板ID
-      useTemplateId: 'UZbReTt24E7wnaeEehijqkVbKEq6X82uIEkYuQlkIZw',
+      useTemplateId: 'blMieWZ4QJtK4y_xuhl7VLZZ51XW5FddPgkXZJC35mA',
       // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
       horoscopeDate: '7-27',
       festivals: [
@@ -95,10 +97,12 @@ const USER_CONFIG = {
         { keyword: 'love_day', date: '2023-04-30' },
         // 相识纪念日
         { keyword: 'meet_day', date: '2023-04-07' },
+        // 告白纪念日
+        { keyword: 'confession_day', date:'2023-5-13' },
       ],
        SLOT_LIST: [
     // 这样配置的话，就会每次发送这句话
-    { keyword: 'encourage_oneself', contents: '你主要的问题在于读书太少而想得太多' },
+    { keyword: 'message_board', contents: '宝贝不要生我的气啦' },
     // 这样配置的话，就会每次随机选一句话发送
     {
       keyword: 'love_records',
